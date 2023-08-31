@@ -9,9 +9,9 @@ class TestRoom(unittest.TestCase):
 
         self.room_1 = Room("Beatles", 2)
 
-        self.guest_1 = Guest("Bob")
-        self.guest_2 = Guest("Kate")
-        self.guest_3 = Guest("Fred")
+        self.guest_1 = Guest("Bob", 50)
+        self.guest_2 = Guest("Kate", 40)
+        self.guest_3 = Guest("Fred", 10)
 
         self.song_1 = Song("BlackLilys", "Party")
 
@@ -35,7 +35,6 @@ class TestRoom(unittest.TestCase):
         self.room_1.add_guest(self.guest_1)
         self.room_1.add_guest(self.guest_2)
         self.room_1.add_guest(self.guest_3)
-
         self.assertEqual(len(self.room_1.guests), self.room_1.capacity)
 
 
