@@ -1,15 +1,21 @@
 class Room:
-    def __init__(self, name):
+    def __init__(self, name, capacity):
 
         self.name = name
-        self.singers = []
         self.songs = []
         self.guests = []
+        self.capacity = capacity
 
 
     def add_guest(self, guest):
 
-        self.guests.append(guest)
+        if len(self.guests) >= self.capacity:
+
+            return "Sorry, this room is full."
+
+        else:
+
+            self.guests.append(guest)
 
 
     def kick_guest_out(self, guest):
@@ -20,3 +26,6 @@ class Room:
     def add_song(self, song):
 
         self.songs.append(song)
+
+
+    
