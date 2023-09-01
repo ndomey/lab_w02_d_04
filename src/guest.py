@@ -3,3 +3,9 @@ class Guest:
 
         self.name = name
         self.wallet = wallet
+
+
+
+    def pay(self, amount):
+
+        self.wallet -= amount

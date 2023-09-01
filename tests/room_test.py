@@ -7,7 +7,7 @@ class TestRoom(unittest.TestCase):
 
     def setUp(self):
 
-        self.room_1 = Room("Beatles", 2)
+        self.room_1 = Room("Indie", 2)
 
         self.guest_1 = Guest("Bob", 50)
         self.guest_2 = Guest("Kate", 40)
@@ -18,7 +18,7 @@ class TestRoom(unittest.TestCase):
 
     def test_room_has_name(self):
 
-        self.assertEqual("Beatles", self.room_1.name)
+        self.assertEqual("Indie", self.room_1.name)
 
 
     def test_can_guest_be_added_room(self):

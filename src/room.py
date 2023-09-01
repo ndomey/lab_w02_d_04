@@ -5,7 +5,7 @@ class Room:
         self.songs = []
         self.guests = []
         self.capacity = capacity
-        self.entry_fee = 5
+        
 
 
     def add_guest(self, guest):
@@ -27,11 +27,6 @@ class Room:
     def add_song(self, song):
 
         self.songs.append(song)
-
-
-    # def take_payment(self, guest):
-
-
 
 
     # def entry_to_room(self, customer):
